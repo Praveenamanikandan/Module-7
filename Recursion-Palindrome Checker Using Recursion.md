@@ -1,11 +1,11 @@
-# 🔁 Recursion:Palindrome Checker Using Recursion in Python
+#  Recursion:Palindrome Checker Using Recursion in Python
 
-## 🎯 AIM:
+##  AIM:
 To write a Python program to check whether a given string is a **palindrome** using **recursion**.
 
 ---
 
-## 🧠 ALGORITHM:
+##  ALGORITHM:
 
 1. **Start**
 2. Define a recursive function `is_palindrome(word)`
@@ -19,10 +19,29 @@ To write a Python program to check whether a given string is a **palindrome** us
 
 ---
 
-## 💻 PROGRAM:
-ADD CODE HERE
+## PROGRAM:
+```
+def is_palindrome(word):
+    if len(word) <= 1:
+        return True
+    
+    
+    else:
+        return word[0] == word[-1] and is_palindrome(word[1:-1])
+        
+
+s=input()
+    
+if is_palindrome(s):
+    print("String is a palindrome")
+    
+else:
+    print("String is not a palindrome")
+```
 
 ## OUTPUT
+<img width="762" height="307" alt="image" src="https://github.com/user-attachments/assets/4697962c-3f33-4105-91cb-16556f8a78eb" />
 
 ## RESULT
 
+The program was executed successfully
